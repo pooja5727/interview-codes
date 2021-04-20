@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include<string.h>
+
+int main() {
+char str[100],len;
+  char temp;
+  scanf("%s",str);
+  len=strlen(str);
+  for(int i=0;i<len/2;i++)
+  {
+      temp=str[len-1];
+      str[len-1]=str[i];
+      str[i]=temp;
+      len=len-1;
+  }
+  printf("%s",str);
+}
